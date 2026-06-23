@@ -640,7 +640,7 @@ function loadTherapistProfile(id) {
               ${t.specialties.map(s => `<span class="specialty-tag"><img src="icons/check.png" alt="" class="specialty-icon">${s}</span>`).join('')}
             </div>
             <div class="profile-book-btns">
-              <a href="https://wa.me/254700000000?text=Hi! I'd like to book a session with ${t.name}" target="_blank" class="btn btn-wa"> <img src="icons/whatsapp.png" alt="WhatsApp icon"> WhatsApp Booking</a>
+              <a href="https://wa.me/254143001962?text=Hi! I'd like to book a session with ${t.name}" target="_blank" class="btn btn-wa"> <img src="icons/whatsapp.png" alt="WhatsApp icon"> WhatsApp Booking</a>
             </div>
           </div>
         </div>
@@ -687,7 +687,7 @@ contactForm?.addEventListener('submit', (e) => {
   const service = data.get('service');
   const msg = data.get('message') || 'I would like to book a session.';
   const text = encodeURIComponent(`Hi Nairobi Oasis!\n\nName: ${name}\nService: ${service}\n\n${msg}`);
-  window.open(`https://wa.me/254700000000?text=${text}`, '_blank');
+  window.open(`https://wa.me/254143001962?text=${text}`, '_blank');
 });
 
 // BOOKING FORM
@@ -705,7 +705,7 @@ bookingForm?.addEventListener('submit', (e) => {
   if (channel === 'telegram') {
     window.open(`https://t.me/NairobiOasis?text=${text}`, '_blank');
   } else {
-    window.open(`https://wa.me/254700000000?text=${text}`, '_blank');
+    window.open(`https://wa.me/254143001962?text=${text}`, '_blank');
   }
 });
 
